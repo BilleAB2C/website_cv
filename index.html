@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Harmattan&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Home</title>
+</head>
+<body>
+	<div id= header>
+		<div id=header2>
+			<div>
+				<p onclick="bio()">Accueil</p>
+			</div>
+			<div>
+				<p onclick="projets()">Projets</p>
+			</div>
+			<div>
+				<p onclick="cv()">CV</p>
+			</div>
+			<div>
+				<p onclick="contact()">Contact</p>
+			</div>
+		</div>	
+	</div>
+
+	<div id="intro">
+		<div class ="circle"></div>
+		<h3>Billel ABBES</h3>
+		<p> Passionné par l'informatique depuis mon enfance, je suis actuellemnt étudiant à la Sorbonnes Universités en 2e année de Master informatique, spécialité STL : "Science et Technologie du Logiciel".<br>
+		Je suis de nature dynamique, autonome et créatif, doté d'un ésprit   Très souvant décrit comme souriant.<br>
+		J'aime le sport, notamment la natation et le football, le cinéma et le désign.
+		<br><br>
+		Sur ce site internet je vous présente mes différents projets personnels ainsi que les projets que j'ai réalisé pendant mon cursus universitaire. Pour chaque projet vous allez trouver une description, un rapport, un fichier executable et son ReadMe : "le fichier qui explique les instruction à faire pour executer le programme" et/ou une vidéo de démonstration du projet. 
+		</p>
+	</div>
+	<div id = projets>
+		<ul id="l_projets">
+			<li><a href="#pr1">plannificateur sncf</a></li>
+			<li><a href="#pr2">But4reuse</a></li>
+			<li><a href="#pr3">Arbre de Steiner</a></li>
+		</ul>
+		<a id ="pr1">
+			<div class= "projet">
+				<div class ="titre">Plannificateur SNCF</div>
+
+				<p class ="description">
+					Dans la majorité des gares TGV SNCF, l’équipe d’escale est composée des
+					agents, des OIV, et des chefs d’escales. Chaque jour, plusieurs trains passent
+					par ces gares, pour chaque train, il y’a un nombre de tache à réaliser, l’équipe
+					de l’escale de la gare doit garantir la réalisation de ces taches Cette équipe est
+					censé garantir la réalisation des tâches suivantes :<br>
+					
+						* La sécurité du train : un agent doit se présenter sur le quai durant le
+						stationnement du train à la gare 
+						* Le service voyageur : quand un train est composé de deux rame un agent
+						supplémentaire doit se présenter sur le quai au niveau de la 2ème rame.<br>
+						PSH : L’assistance des personnes à mobilités réduite, cette assistance
+						peut être une assistance simple, ou Rampe électrique -la personne est
+						dans un fauteuil roulant personnel, et elle doit monter ou descendre du
+						train sans besoin de descendre du fauteuil, ce qui nécessite des
+						manipulations à faire au niveau du train pour pouvoir réaliser cette
+						tâche-<br>
+						* JVS : un groupe d’enfants qui doivent être accompagnés d’un ou
+						plusieurs agents d’escales pour descendre ou monter du train. Cela
+						nécessite un ou deux agents en fonction de nombre des enfants.<br>
+						* L’embarquement des trains OUIGO : cela nécessite un chef d’escale et
+						deux agents<br>
+
+					Certaines tâches ne peuvent pas être réalisé par n’importe quel agent, il faut
+					que l’agent soit éligible de faire la tâche pour qu’il soit affecté à cette tâche.
+					Chaque début de journée, un planning doit être écrit pour distribuer les tâches
+					aux agents. La personne qui fait ce planning doit avoir sous les yeux :<br>
+					* La liste des trains qui passent par la gare ce jour-là, la note de gare.
+					* La liste des PSH, elle est en format Excel<br>
+					* La liste des JVS, elle est également en format Excel<br>
+					* Les créneaux du travail des agents.<br>
+					* La connaissance des éligibilités des agents (cela n’est pas fourni).<br>
+					Ensuite, en respectant la contrainte qu’un agent ne peut pas réaliser deux
+					tâches simultanées, et que les tâches doivent être distribué le plus légalement
+					possible, le planning se fait à la main et écrit sur la note de gare, la note de gare 
+					est ensuite se prend en photocopie en plusieurs exemplaire, et chaque copie
+					est donnée à un agent.<br>
+					En cas de perturbation, un nouveau planning doit se créer, et se redonner aux
+					agents.<br><br>
+					L'objectif est donc de faire une application qui peut :<br>
+					* Réunir dans une même base de données, les informations concernant les
+					agents (notamment l’éligibilité) et les créneaux de travail de chaque
+					agent.<br>
+					* Récupérer la liste des trains qui passent et qui s’arrêtent par une gare et
+					les informations concernant ces trains : numéro, nombre de rame, heure
+					d’arrivé, heure de départ, si c’est un OUIGO, doit être coupé ou
+					accroché.<br>
+					* Lire un fichier Excel et en tirer la liste des PSH.<br>
+					* Lire un fichier Excel et en tirer la liste des JVS.<br>
+					* Proposer un planning.<br>
+					* Partager ce planning à tous les agents en format numérique.<br>				
+				</p>
+
+				<div class ="rapport" >
+					<div>Si vous voulez plus de détails techniques concernant veuillez cliquer sur le lien suivant : </div>
+					<a href="rapport_plannif.pdf">cliquer ici</a>
+				</div>
+
+				<div class ="demonstration" >
+					<div>La video suivante montre un exemple de création d'un agent, l'ajout d'un créneau de travail et la génération de planning ainsi que sa visualisation depuis d'une session d'un agent:  </div>
+					<iframe  src="https://www.youtube.com/embed/bb1hCqW0_uQ"></iframe>
+				</div>
+			</div>
+		</a>
+
+		<a id="pr2">
+			<div class= "projet">
+				<div class ="titre" >But4reuse : Adaptateur pour protéines</div>
+				
+				<div class ="description" >
+					Les protéines d’une même famille partagent des séquences ayant des
+					caractéristiques proches en terme de structure et de fonction cellulaire. C’est à ce
+					moment qu’intervient But4reuse, logiciel qui permet d’identifier des similarités entre
+					différents objets de même types (aussi appelés artefacts). Ces artefacts peuvent être
+					des images, du code, etc. Le but de notre projet est donc d’utiliser But4reuse pour
+					comparer des protéines d’une même famille.
+					But4reuse est développé en Java à base de plug-in Eclipse, et offre une structure
+					logicielle générique : But4reuse décompose un artefact en un ensemble d’éléments,
+					et utilise un algorithme, déjà implémenté, qui sait identifier des blocs d’éléments
+					communs qui constituent les différents artefacts étudiés. Mais cet algorithme
+					manipule des interfaces qu’il reste à définir, selon ce que l’on souhaite comparer.
+					Une implémentation de ces interfaces est appelé un adaptateur, d’où l’objectif de
+					notre projet, implémenter un adaptateur pour protéines.
+				</div>				
+				
+				<div class ="rapport" >
+					<div>Le rapport suivant montre en détail le projet et les étapes de son implémentation : </div>
+					<a href="But4reuse.pdf">cliquer ici</a>
+				</div>
+				
+				<div class ="executable" >
+					<div>
+						Vous pouvez télécharger le code source en cliquant sur le lien suivant : 
+						<a href="https://drive.google.com/file/d/1L-AXcF6Pfa3Pn2SCvEFbgh0DKsjTGQsB/view?usp=sharing"> code source</a><br>
+						Le fichier .zip que vous allez télécharger contient éqgalemnt un fichier "PSTL-manuel d'utilistation.pdf" qui explique les différente configurations et un fichier "SplitFamily.zip" qui contient des familles de protéines.
+					</div>
+
+				</div>
+				
+			</div>
+		</a>
+
+		<a id="pr3">
+			<div class= "projet">
+				<div class ="titre">Arbre de Steiner</div>
+				
+				<div class ="description" >
+					Graphe geométrique : Un graphe geométrique dans un plan 2D est défini par un ensemble de points dans le plan appeles sommets, et un seuil sur la distance entre les points : il existe une ar ´ ete entre deux sommets si et seulement si la distance Euclidienne entre les deux sommets est inferieure à ce seuil. Quand une arète existe entre deux sommets, le poids de l’arete est la distance Euclidienne entre les deux sommets dans le plan. <br>
+					Probleme de l’arbre de Steiner dans un graphe : étant donnes un graphe G = (V, E) et un sous ensemble S ⊆ V
+					de sommets, le probleme de l’arbre de Steiner couvrant S consiste a calculer un sous graphe de G qui est un arbre et qui passe par tous les points de S, tel que la longueur totale des aretes de l’arbre est la plus petite possible.<br>
+					Probleme de l’arbre de Steiner avec restriction budgétaire, dans un graphe : Soient G = (V, E) un graphe, S ⊆ V un sous ensemble de sommets, s ∈ S un point appele maison-mère, et B un reel appelé budget. Le problème de l’arbre de Steiner couvrant S de budget B passant par s consiste a calculer un sous graphe de G qui est un arbre, qui passe par s, de longueur totale inferieure à B, passant par le plus grand nombre possible de points de S.<br>
+
+					Ce projet s’agit de proposer une heuristique pour le problème de l’arbre de Steiner dans un graphe géomètrique, avec et sans restriction budgetaire. 
+
+				</div>				
+				
+				<div class ="rapport" >
+					<div>Le rapport suivant montre les heureustique utilsées : </div>
+					<a href="Rapport_cpa_projet_final.pdf">cliquer ici</a>
+				</div>
+				
+				<div class ="executable" >
+					<div>
+						Vous pouvez télécharger le code source en cliquant sur le lien suivant : 
+						<a href="https://drive.google.com/file/d/158hEt5t9inUxajt4-JPZ5s2xUJEp7g4y/view?usp=sharing"> code source</a><br>
+					</div>
+				</div>
+				
+				<div class ="demonstration" >
+					<div> Demo </div>
+					<iframe  src="https://www.youtube.com/embed/LllRicY4_nk"></iframe>
+				</div>
+				
+			</div>
+		</a>
+
+	</div>
+
+	<div id="cv">
+		<div>
+			<img src="horizontal_cv.png">
+		</div>
+	</div>
+
+	<div id="contact">
+		<div id="con">
+		<ul>
+			<li>
+				<div class ="adress">
+					<i class="fa fa-map-marker" ></i>
+					<p>
+						île de france 91300 Massy
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class ="phone">
+					<i class="fa fa-phone" style="color: #25D366"></i>
+					<p>07 58 04 12 78</p>
+				</div>
+			</li>
+			<li>
+				<div class="email">
+					<i class="fa fa-envelope-square"></i>
+					<p>billel.abbes@hotmail.com</p>
+				</div>
+			</li>
+			<li>
+				<div class="gmail">
+					<i class="fa fa-google" style="color: #dd4b39"></i>
+					<p>billel.abbes.pro@gmail.com</p>
+				</div>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/billel-abbes-59b891108/" class="linkedin">
+					<i class="fa fa-linkedin" style="color: #0077B5"></i>
+					<p>Billel Abbes</p>
+				</a>
+			</li>
+			<li>
+				<a href="https://join.skype.com/invite/o8bZAHx39Dym" class="skype" >
+					<i class="fa fa-skype "style="color: #00AFF0"></i>
+					<p>ABBES Billel</p>
+				</a>
+			</li>
+		</ul>
+		<img src="qrcode.png">
+		</div>
+	</div>
+</body>
+</html>
