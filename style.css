@@ -97,15 +97,14 @@ button{
 
 #l_projets{
 	top: 43px;
-	width: 14%;
+	
 	left: 0px;
 	position: fixed;
 	margin-left: 3px;
 	padding-left: 0px;
-	border: 1 px solid red;
 }
 #l_projets li{
-	border: 1 px solid red;
+	width : 180px;
 	display: grid;
 	height: 50px;
 	padding-left: 20px;
