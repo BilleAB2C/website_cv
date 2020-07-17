@@ -102,10 +102,10 @@ button{
 	position: fixed;
 	margin-left: 3px;
 	padding-left: 0px;
-	border 1 px solid red;
+	border: 1 px solid red;
 }
 #l_projets li{
-	border 1 px solid red;
+	border: 1 px solid red;
 	display: grid;
 	height: 50px;
 	padding-left: 20px;
