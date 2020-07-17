@@ -104,7 +104,7 @@ button{
 	padding-left: 0px;
 }
 #l_projets li{
-	width : 180px;
+	width : 98%;
 	display: grid;
 	height: 50px;
 	padding-left: 20px;
