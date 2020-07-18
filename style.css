@@ -70,7 +70,7 @@ button{
 .circle{
 	width: 200px;
 	height: 200px;
-	background: url(photo.jpg);
+	background: url(photo3.jpg);
 	border-radius: 50%;
 	float: left;
 	shape-outside: circle();
