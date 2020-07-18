@@ -40,7 +40,7 @@ body{
 	font-family: Harmattan, sans-serif;
 	margin: auto;
 	font-size: 22px;
-    text-decoration: none;
+        text-decoration: none;
 	color: #E7F0F3;
 }
 
@@ -70,7 +70,7 @@ button{
 .circle{
 	width: 200px;
 	height: 200px;
-	background: url(photo2.jpg);
+	background: url(photo.jpg);
 	border-radius: 50%;
 	float: left;
 	shape-outside: circle();
