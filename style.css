@@ -1,0 +1,300 @@
+body{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 75px;
+	display: grid;
+	width: 70%;
+	min-width: 700px;
+	background: radial-gradient(white, rgb(230,230,230));
+}
+
+#header {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	border-style: solid;
+  	border-width: 1px;
+  	border-color: #b3b3b3;
+	box-shadow: 0 2px 2px -2px gray;
+	background-color: rgb(51,51,51);
+	border:none;
+}
+
+#header2{
+	position: relative;
+	width: 70%;
+	height:100%;
+	margin-left: auto;
+	margin-right: auto;	
+	display: grid;
+	grid-template-columns: 6fr 11fr 6fr 13fr 9fr 8fr 7fr ;
+}
+#header2 div{
+	display: grid;
+}
+#header2 p{
+	font-family: Harmattan, sans-serif;
+	margin: auto;
+	font-size: 20px;
+    text-decoration: none;
+	color: #E7F0F3;
+	text-align: center;
+}
+
+#header2 p:hover {
+	color: white;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+.brxsmall { 
+    display: block; 
+    margin-bottom: -.6em; 
+} 
+
+button{
+
+}
+
+#intro{
+	display: block;
+	padding: 25px;
+	border-radius: 2px;
+	box-shadow: 5px 5px 10px grey;
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 18px;
+	background-color: white;
+}
+
+.circle{
+	width: 200px;
+	height: 200px;
+	background: url(img/photo_profil.png);
+	border-radius: 50%;
+	float: left;
+	shape-outside: circle();
+	margin: 20px 30px 30px 20px;
+}
+
+#intro p{
+	margin: 0;
+	padding: 0;
+	padding-right: 25px;
+	text-align: justify;
+	line-height: 22px;
+}
+
+#intro h1{
+	margin :0 0 20px;
+	padding: 0;
+	font-size: 30px;
+}
+
+#projets{
+	display: none;
+}
+
+#l_projets{
+	list-style: none;
+	position: fixed;
+	height: 0px;
+	left: 10px;
+	margin-left: 3px;
+	padding-left: 0px;
+}
+#l_projets li{
+
+	display: grid;
+	height: 35px;
+}
+#l_projets a {
+	text-decoration: none;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: rgb(6,21,177);
+	font-size:18px;
+	font-family:'Balsamiq Sans', cursive; ;
+}
+
+#l_projets li:hover{
+	
+}
+
+#l_projets a:hover {
+	text-decoration: underline;
+}
+
+.p_link{
+	display: grid ;
+	margin-top: -70px;
+}
+.projet{
+	padding: 25px;
+	padding-top: 15px;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	box-shadow: 5px 5px 10px grey;
+	background-color: white;
+	font-family: 'Balsamiq Sans', cursive;
+
+}
+
+.titre{
+    margin: 15px 0px 0px 0px;
+   	font-size: 26px;
+    color: black;
+}
+
+.description{
+	margin: 0;
+	padding: 30px;
+	padding-top: 5px;
+	padding-right: 25px;
+	text-align: justify;
+	line-height: 22px;
+	color: rgb(51,51,51);
+}
+
+.description ul{
+	border: 1px solid grey;
+	margin-top: -20px;
+	padding-top: -20px;
+}
+
+.description li{
+	text-align: justify;
+}
+
+.rapport{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.rapport div{
+	font-family: 'Balsamiq Sans', cursive;
+	margin-top:auto;
+	margin-bottom:auto;
+	padding-left: 30px;
+	padding-right: 5px;
+}
+
+.executable{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.executable div {
+	font-family: 'Balsamiq Sans', cursive;
+	margin-top:auto;
+	margin-bottom:auto;
+	padding-left: 30px;
+	padding-right: 5px;
+
+}
+
+.demonstration{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.demonstration div{
+	font-family: 'Balsamiq Sans', cursive;
+	color: grey;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe{
+	width: 100%;
+	height: 420px;
+	margin-top: 20px;
+	border: none;
+	box-shadow: 3px 3px 7px grey;
+}
+
+.cv div{
+	width: 100%;
+	height: 98%;
+	display: grid;
+}
+.cv img{
+	width: 100%;
+	min-width: 700px;
+	box-shadow: 3px 3px 7px grey;
+	margin: auto; 
+}
+
+#contact{
+	font-family: Harmattan, sans-serif;
+	display: none;
+	margin-top: 20px;
+	padding:20px; 
+	border-radius: 2px;
+	box-shadow: 5px 5px 10px grey;
+	font-size: 18px;
+	background-color: white;
+}
+
+#con{
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.adress, .phone, .email, .gmail, .linkedin, .skype{
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	font-size: 25px;
+	margin-bottom: -28px;
+	margin-left: -15px;
+}
+
+.fa {
+  font-size: 30px;
+  line-height: 60px;
+  transition: .6s;
+  color: #000;
+  margin: auto;
+}
+
+#contact ul{
+	margin-left: 20px;
+	margin-top: -10px;
+	padding-top:0px;
+}
+
+#contact li { 
+	display: grid;
+	list-style: none;
+	bottom: 0;
+	border-bottom: 2px grey solid;
+}
+
+#contact a {
+	text-decoration: none;
+	color: black;
+}
+
+#divqr{
+	display: grid;
+}
+
+#qrcode{
+	width: 60%;
+	height: 60%;
+	margin: auto;
+}
+
+#intro{
+	display: block;
+}
+
+#cursus, #projets, #exper, #competence, #caract, #contact {
+	display: none;
+}
